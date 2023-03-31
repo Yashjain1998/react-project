@@ -1,16 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
-// import ChildComponent from "./Component/ChildComponent";
-import { useState, useEffect } from 'react'; 
+import ChildComponent from "./Component/ChildComponent";
+// import { useState, useEffect } from 'react'; 
 function App() {
 //2  const[name,rename]=useState("red");
-const[btnname, btnfunction]=useState(['OFF','ON']);
-console.log(1,);
-useEffect(function handleClick(){
-  // console.log(2,);
-  const arr=[...btnname].reverse();
-  btnfunction(arr);
-},btnname);
+// const[btnname, btnfunction]=useState(['OFF','ON']);
+// console.log(1,);
+// useEffect(function handleClick(){
+//   // console.log(2,);
+//   const arr=[...btnname].reverse();
+//   btnfunction(arr);
+// },btnname);
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -28,7 +28,7 @@ useEffect(function handleClick(){
     //   </header>
     // </div>
     <>
-    {/* 1 <ChildComponent/> */}
+    <ChildComponent/>
       {/*2
       <p className={name}>Newton School</p>
       <button onClick={()=>{if(name==="red"){
@@ -38,9 +38,9 @@ useEffect(function handleClick(){
       }}}>Change style</button>
      */}
        
-        <button type='button' onClick={handleClick()}>jjh</button>
+        {/* <button type='button' onClick={handleClick()}>jjh</button>
         <br/>
-        <button>ghh</button>
+        <button>ghh</button> */}
     </>
   );
 }
